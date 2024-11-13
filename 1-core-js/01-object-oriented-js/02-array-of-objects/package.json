@@ -1,0 +1,11 @@
+{
+  "name": "objects-json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nick Rabone",
+  "license": "MIT",
+  "description": ""
+}
