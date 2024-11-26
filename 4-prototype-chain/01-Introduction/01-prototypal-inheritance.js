@@ -38,3 +38,5 @@ Object.setPrototypeOf(child, parent)
 for (const item in child) {
   console.log(item)
   }
+
+console.log(Objects.keys(child)) 
