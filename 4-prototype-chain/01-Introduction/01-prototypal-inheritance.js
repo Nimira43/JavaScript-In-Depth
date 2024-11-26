@@ -14,4 +14,13 @@ array2
  * 
  * How do JavaScript objects know what methods they have?
  * 
+ * How do JavaScript objects know what methods they have?
+ * JavaScript objects know what methods they have through their prototype chain. When you create an object, it 
+ * automatically links to a prototype object. This prototype can have properties and methods that the new object 
+ * inherits and can use.
+ *
+ * Why does the for ... in loop iterate over an objects own and inherited properties?
+ * The for...in loop in JavaScript is designed to iterate over all enumerable properties of an object. This includes 
+ * both the object's own properties and properties that it inherits from its prototype chain.
+ *
  */
