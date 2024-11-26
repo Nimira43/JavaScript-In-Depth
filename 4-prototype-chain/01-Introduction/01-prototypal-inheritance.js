@@ -24,3 +24,17 @@ array2
  * both the object's own properties and properties that it inherits from its prototype chain.
  *
  */
+
+let parent = {
+  surname: 'Hulkenberg'
+}
+
+let child = {
+  forename: 'Eddie'
+}
+
+Object.setPrototypeOf(child, parent)
+
+for (const item in child) {
+  console.log(item)
+  }
