@@ -26,6 +26,9 @@ class BankAccount {
       return 'Withdrawal failed!'
     }
   }
+  roundToTwo(num) {
+    return Math.round(num * 100) / 100
+  }
 }
 
 let account1 = new BankAccount('Bob', '1234567890', 25)
