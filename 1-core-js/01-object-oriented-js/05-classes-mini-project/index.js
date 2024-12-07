@@ -8,13 +8,18 @@ class BankAccount {
     if (amount > 0) {
       this.balance += amount
       console.log(`Your deposit: £${amount} New balance: £${this.balance}`)
+      return 'Deposit successful!'
     } else {
-      console.log('Cannot desposit a negative number')
+      console.log('Cannot deposit a negative number')
+      return 'Deposit failed!'
     }
   }
 }
 
-let transaction1 = new BankAccount('Bob', '1234567890', 25)
-console.log(transaction1)
-console.log(transaction1.deposit(78.32))
-console.log(transaction1)
+let account1 = new BankAccount('Bob', '1234567890', 25)
+console.log(account1)
+console.log(account1.deposit(78.32))
+console.log(account1)
+console.log(account1.deposit(-378.67))
+console.log(account1)
+console.log(account1.deposit(38.93))
