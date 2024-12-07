@@ -7,6 +7,7 @@ class BankAccount {
   deposit(amount) {
     if (amount > 0) {
       this.balance += amount
+      this.balance = this.roundToTwo(this.balance);
       console.log(`Your deposit: £${amount} New balance: £${this.balance}`)
       return 'Deposit successful!'
     } else {
@@ -17,6 +18,7 @@ class BankAccount {
   withdraw(amount) {
     if (amount < this.balance) {
       this.balance -= amount
+      this.balance = this.roundToTwo(this.balance)
       console.log(`Your withdrawal: £${amount} New balance: £${this.balance}`)
       return 'Withdrawal successful!'
     } else {
