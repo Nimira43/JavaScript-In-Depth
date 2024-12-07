@@ -37,3 +37,33 @@ console.log(triangle2.b = 87)
 console.log(triangle2.getArea())
 console.log(triangle2.getHypotenuse().toFixed(3))
 console.log(triangle2)
+
+console.log('---------- Constructors -----------')
+// Constructors
+
+class TriangleClass {
+  constructor(a, b) {
+    this.a = a
+    this.b = b
+  }
+  getArea() {
+    return (this.a * this.b) / 2
+  }
+  getHypotenuse() {
+    return Math.sqrt(this.a ** 2 + this.b ** 2)
+  }
+}
+
+console.log('---------- 1')
+let triangle3 = new TriangleClass(5, 8)
+
+console.log(triangle3)
+console.log(triangle3.getArea())
+console.log(triangle3.getHypotenuse().toFixed(3))
+
+console.log('---------- 2')
+let triangle4 = new TriangleClass(9, 13)
+
+console.log(triangle3)
+console.log(triangle3.getArea())
+console.log(triangle3.getHypotenuse().toFixed(3))
