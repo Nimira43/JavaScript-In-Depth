@@ -43,6 +43,10 @@ console.log('---------- Constructors -----------')
 
 class TriangleClass {
   constructor(a, b) {
+    if(!Number.isFinite(a) || a <= 0) throw new Error(`Invalid a: ${a}`)
+    
+    if(!Number.isFinite(b) || b <= 0) throw new Error(`Invalid a: ${b}`)
+
     this.a = a
     this.b = b
   }
@@ -56,14 +60,18 @@ class TriangleClass {
 
 console.log('---------- 1')
 let triangle3 = new TriangleClass(5, 8)
-
 console.log(triangle3)
 console.log(triangle3.getArea())
 console.log(triangle3.getHypotenuse().toFixed(3))
 
 console.log('---------- 2')
 let triangle4 = new TriangleClass(9, 13)
-
 console.log(triangle4)
 console.log(triangle4.getArea())
 console.log(triangle4.getHypotenuse().toFixed(3))
+
+console.log('---------- 3')
+let triangle5 = new TriangleClass('Bob', 13)
+console.log(triangle5)
+console.log(triangle5.getArea())
+console.log(triangle5.getHypotenuse().toFixed(3))
