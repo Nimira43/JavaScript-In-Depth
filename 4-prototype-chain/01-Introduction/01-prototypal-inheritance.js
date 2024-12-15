@@ -10,7 +10,7 @@ let array2 = array.map(num => num * 2)
 array2
 
 /**
- * Prototype Inheritance - acces object properties from another object
+ * Prototype Inheritance - access object properties from another object
  * 
  * How do JavaScript objects know what methods they have?
  * 
