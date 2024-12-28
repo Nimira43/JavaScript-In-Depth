@@ -12,4 +12,6 @@
 ##### Inline Event Handlers: 
 ###### They were beginning to be replaced by addEventListener for cleaner, more maintainable code.
 
-#### This code represents a transitional period in JavaScript's evolution, where developers were moving towards more modern practices but still relying on some older, widely supported features.
+#### Summary
+
+###### This code represents a transitional period in JavaScript's evolution, where developers were moving towards more modern practices but still relying on some older, widely supported features.

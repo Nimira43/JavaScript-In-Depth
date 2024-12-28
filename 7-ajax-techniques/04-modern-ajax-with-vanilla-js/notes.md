@@ -20,4 +20,6 @@
 ##### DOM Manipulation: 
 ###### Using modern methods to create and append DOM elements improves readability and performance.
 
-#### These techniques represent the current state of JavaScript, leveraging modern language features and best practices to make code cleaner, more efficient, and easier to maintain.
+#### Summary
+
+###### These techniques represent the current state of JavaScript, leveraging modern language features and best practices to make code cleaner, more efficient, and easier to maintain.
