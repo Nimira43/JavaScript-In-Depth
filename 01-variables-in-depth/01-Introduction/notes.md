@@ -205,3 +205,44 @@ outer()
 
 ###### In this example, the inner function has access to the variable x from the outer function due to the lexical environment.
 
+### Binding
+###### Binding in JavaScript refers to associating variables and functions with a particular scope or context. It essentially means "linking" a variable or function to a specific location in memory so it can be accessed and used within a given scope. There are different types of bindings in JavaScript, such as:
+
+#### Variable Binding: 
+###### When you declare a variable, you bind that variable name to a specific value in a particular scope. For example:
+
+```
+let x = 10 // 'x' is bound to the value 10 in the current scope
+```
+
+#### Function Binding: 
+###### Functions are also bound to specific scopes when they are declared. Additionally, you can bind functions to particular objects using methods like bind(), call(), and apply().
+
+```
+function greet() {
+  console.log(this.name)
+}
+
+const user = { name: 'Alice' }
+const boundGreet = greet.bind(user)
+boundGreet(); // Outputs: Alice
+```
+
+### Temporal Dead Zone (TDZ)
+###### The Temporal Dead Zone (TDZ) is a concept that comes into play with the let and const keywords. It refers to the period between the start of a scope (like a block or function) and the point at which the variable is declared. During this period, the variable is in an uninitialised state and cannot be accessed. If you try to access a variable that is in the TDZ, you will get a ReferenceError.
+
+###### Here’s an example to illustrate the TDZ:
+
+```
+console.log(x); // ReferenceError: x is not defined
+let x = 5;
+console.log(x); // Outputs: 5
+```
+
+##### In this example:
+
+###### The first console.log(x) is within the TDZ because x has been declared but not yet initialised. Accessing x at this point results in a ReferenceError.
+
+###### After the declaration line (let x = 5;), x is initialised, and you can safely access its value.
+
+###### The TDZ helps prevent common bugs and logical errors by ensuring that variables are not used before they are declared. It enforces a more predictable behavior in your code by ensuring variables are initialized before use.
