@@ -246,3 +246,50 @@ console.log(x); // Outputs: 5
 ###### After the declaration line (let x = 5;), x is initialised, and you can safely access its value.
 
 ###### The TDZ helps prevent common bugs and logical errors by ensuring that variables are not used before they are declared. It enforces a more predictable behavior in your code by ensuring variables are initialized before use.
+
+### Function Recursion
+###### Recursion occurs when a function calls itself in order to solve a problem. A recursive function breaks down a problem into smaller, more manageable sub-problems until it reaches a base case—a stopping condition that ends the recursion.
+
+###### Here's a simple example of a recursive function to calculate the factorial of a number:
+
+```
+function factorial(n) {
+  // Base case: if n is 0, the factorial is 1
+  if (n === 0) {
+    return 1;
+  }
+  // Recursive case: n * factorial of (n-1)
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // Output: 120
+```
+
+###### In this example, the factorial function calls itself with a reduced value of n until it reaches the base case (when n is 0).
+
+##### Key Points
+###### Base Case: This is the condition that stops the recursion. Without a base case, the function would call itself indefinitely, leading to a stack overflow error.
+
+###### Recursive Case: This part of the function makes the recursive call. It reduces the problem into a smaller instance of itself.
+
+###### Call Stack: Each recursive call adds a frame to the call stack. When the base case is reached, the call stack unwinds as each function call returns its result.
+
+##### Example: Fibonacci Sequence
+###### Another classic example of recursion is calculating the Fibonacci sequence:
+
+```
+function fibonacci(n) {
+  // Base case: return n if it's 0 or 1
+  if (n === 0 || n === 1) {
+    return n;
+  }
+  // Recursive case: sum of the two preceding numbers
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+console.log(fibonacci(6)); // Output: 8
+```
+
+###### In this example, the fibonacci function calls itself twice for each input value until it reaches the base cases (when n is 0 or 1).
+
+###### Recursion can be a powerful tool, but it should be used with care to avoid issues like stack overflow and ensure that there's always a base case to end the recursion
