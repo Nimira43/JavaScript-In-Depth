@@ -13,4 +13,5 @@ function scoreTracker() {
 
   score = 0
   addPoints(5)
+  resetScore()
 }
