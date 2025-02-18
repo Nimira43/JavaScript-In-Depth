@@ -11,3 +11,6 @@ function resetScore() {
   score = 0
   return 'Reset score'
 }
+
+score = 0
+addPoints(5)
