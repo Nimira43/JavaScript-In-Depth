@@ -5,12 +5,12 @@ function scoreTracker() {
     score += n
     return `Score updated by ${n}. Present score = ${score}`
   }
-}
 
-function resetScore() {
+  function resetScore() {
+    score = 0
+    return 'Reset score'
+  }
+
   score = 0
-  return 'Reset score'
+  addPoints(5)
 }
-
-score = 0
-addPoints(5)
