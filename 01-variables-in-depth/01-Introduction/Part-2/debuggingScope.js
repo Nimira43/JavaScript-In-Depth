@@ -1,4 +1,6 @@
 function scoreTracker() {
+  debugger
+
   var score
 
   var addPoints = function (n) {
@@ -14,4 +16,7 @@ function scoreTracker() {
   score = 0
   addPoints(5)
   resetScore()
+  debugger
 }
+
+scoreTracker()
