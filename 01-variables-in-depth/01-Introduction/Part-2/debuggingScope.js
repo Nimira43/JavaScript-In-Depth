@@ -6,3 +6,8 @@ function scoreTracker() {
     return `Score updated by ${n}. Present score = ${score}`
   }
 }
+
+function resetScore() {
+  score = 0
+  return 'Reset score'
+}
