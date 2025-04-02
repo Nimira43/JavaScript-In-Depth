@@ -1,7 +1,7 @@
 const message = "First message"
 console.log(message)
 
-message = "Second Message"
+// message = "Second Message"
 
 /**
  * 
@@ -14,3 +14,20 @@ message = "Second Message"
  */
 
 /* However... */
+
+const messageObject = {
+  text: 'Message 1'
+}
+
+console.log(messageObject)
+
+messageObject.text = 'Message 2'
+
+console.log(messageObject)
+
+/* 
+
+You can change the values inside an object.
+The object itself remains mutable, meaning the properties within the object can be changed. This is because const does not make the contents of the object immutable—it only prevents you from reassigning the variable to something else.
+
+*/
