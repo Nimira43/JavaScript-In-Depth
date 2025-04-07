@@ -16,8 +16,19 @@ class Triangle {
   message() {
     return `Triangle - Side A: ${this.a}, Side B: ${this.b}, Area: ${this.getArea()}`
   }
+  summary() {
+    const area = this.getArea()
+    const hypotenuse = this.getHypotenuse()
+    return `Triangle - Side A: ${this.a}, Side B: ${this.b}, Area: ${area}, Hypotenuse: ${hypotenuse.toFixed(2)}`
+  }
 }
 
 const triangle = new Triangle(12, 18)
 console.log(triangle)
 console.log(triangle.message())
+
+const triangle2 = new Triangle(15, 20)
+console.log(triangle2)
+console.log(triangle.summary())
+
+
