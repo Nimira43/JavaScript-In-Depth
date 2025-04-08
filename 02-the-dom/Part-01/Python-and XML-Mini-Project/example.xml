@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+  <article>
+    <title>Understanding the DOM</title>
+    <author>John Doe</author>
+    <content>The DOM is a programming interface for web documents. It represents the page so that programs can change the structure, style, and content dynamically.</content>
+  </article>
+  <article>
+    <title>Getting Started with XML</title>
+    <author>Jane Smith</author>
+    <content>XML, or Extensible Markup Language, is used to store and transport data. It is both human-readable and machine-readable.</content>
+  </article>
+  <article>
+    <title>Why Learn JavaScript?</title>
+    <author>Chris Johnson</author>
+    <content>JavaScript is essential for creating interactive and dynamic web pages. It enhances the user experience by allowing developers to implement complex features.</content>
+  </article>
+</articles>
