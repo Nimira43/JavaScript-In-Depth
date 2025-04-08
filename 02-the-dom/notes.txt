@@ -7,3 +7,5 @@ console.dir(document)       A function that takes an object its input and prints
 Commands in Dev Tools
 ---------------------
 document.forms              
+window.console
+window.navigator
