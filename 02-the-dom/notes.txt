@@ -1,0 +1,5 @@
+Console commands
+----------------
+
+console.log(document)
+console.dir(document)       A function that takes an object its input and prints it out as a JSON-like tree.
