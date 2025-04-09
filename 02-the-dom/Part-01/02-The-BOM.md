@@ -1,4 +1,4 @@
-## The BOM
+### The BOM
 
 ###### The BOM, or Browser Object Model, represents the structure and functionality available to interact with the browser itself. While the DOM (Document Object Model) is all about manipulating the web page's content, the BOM focuses on the browser environment around the page. Here's what it entails:
 

@@ -2,12 +2,12 @@
 <articles>
   <article>
     <title>Understanding the DOM</title>
-    <author>John Doe</author>
+    <author>Jack Taylor</author>
     <content>The DOM is a programming interface for web documents. It represents the page so that programs can change the structure, style, and content dynamically.</content>
   </article>
   <article>
     <title>Getting Started with XML</title>
-    <author>Jane Smith</author>
+    <author>Jill Taylor</author>
     <content>XML, or Extensible Markup Language, is used to store and transport data. It is both human-readable and machine-readable.</content>
   </article>
   <article>
