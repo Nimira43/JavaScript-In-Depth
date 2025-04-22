@@ -1,7 +1,15 @@
 var globalVar = 'Global VAR variable'
-var globalLet = 'Global LET variable'
-var globalConst = 'Global CONST variable'
+let globalLet = 'Global LET variable'
+const globalConst = 'Global CONST variable'
 
-console.log(globalVar)
-console.log(globalLet)
-console.log(globalConst)
+console.log('Outside Function - Var : ', globalVar)
+console.log('Outside Function - Let : ', globalLet)
+console.log('Outside Function - Const : ', globalConst)
+
+function showGlobal() {
+  console.log('Inside Function - Var : ', globalVar)
+  console.log('Inside Function - Let : ', globalLet)
+  console.log('Inside Function - Const : ', globalConst)
+}
+
+showGlobal()
