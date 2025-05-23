@@ -19,6 +19,7 @@ function outer() {
   
   // ... and remains 30 when console logging on line 23
 
+  
   console.log(globalVariable)   // Prints 30
 }
 
