@@ -1,23 +1,22 @@
-#include <stdio.h>
-#include <stdbool.h>
 
 // Global
-int globalVariable = 10;
 
-void outer() {
+var globalVariable = 10
+
+function outer() {
   // Local
-  int globalVariable = 20;
+  var globalVariable = 20
 
   if (true) {
     // Local
-    int globalVariable = 30;
-    printf("%d\n", globalVariable);    // Prints 30
+    var globalVariable = 30
+    console.log(globalVariable)    // Prints 30
   }
-  printf("%d\n", globalVariable);   // Prints 20
+  console.log(globalVariable)   // Prints 20
 }
 
-int main() {
-  outer();
-  printf("%d\n", globalVariable);   // Prints 10
+function main() {
+  outer()
+  console.log(globalVariable);   // Prints 10
 } 
     
