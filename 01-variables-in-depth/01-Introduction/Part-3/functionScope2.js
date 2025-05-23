@@ -1,6 +1,5 @@
 
 // Global
-
 var globalVariable = 10
 
 function outer() {
@@ -12,7 +11,7 @@ function outer() {
     var globalVariable = 30
     console.log(globalVariable)    // Prints 30
   }
-  console.log(globalVariable)   // Prints 20
+  console.log(globalVariable)   // Prints 30
 }
 
 function main() {
@@ -20,3 +19,4 @@ function main() {
   console.log(globalVariable);   // Prints 10
 } 
     
+main()
