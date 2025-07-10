@@ -46,12 +46,12 @@ function regular() {
 const arrow = () => console.log('Arrow')
 
 regular()
-// arrow()
+arrow()
 
 // Calling Functions - Before
 
 regular2()
-arrow2()
+// arrow2()
 
 function regular2() {
   console.log('Regular')
@@ -59,19 +59,40 @@ function regular2() {
 
 const arrow2 = () => console.log('Arrow')
 
-/**
- * Error with arrow2:
-  
- arrowFunctions.js:54 
- Uncaught ReferenceError: Cannot access 'arrow2' before initialization
- 
- */
+/*
 
-// This keyword
+Error with arrow2:
+  
+arrowFunctions.js:54 
+Uncaught ReferenceError: Cannot access 'arrow2' before initialization
+ 
+*/
+
+// This Binding
 
 const person = {
   name: 'Bob',
   sayHelloRegular: function () {
     console.log('Regular: ', this.name)
-  }
+    console.log(this)
+  },
+  // sayHelloArrow: () => console.log('Arrow: ', this.name)
+  sayHelloArrow: () => console.log(this)
 }
+
+person.sayHelloRegular()
+person.sayHelloArrow()
+
+/*
+ 
+Function Type	        How this is Determined	            Typical Use Case
+-------------         ----------------------              ----------------
+Regular Function	    Bound dynamically to the            Methods in objects, 
+                      caller (the object that             constructors
+                      invokes it)
+
+Arrow Function	      Lexically bound to the outer        Callbacks, one-liners, 
+                      scope (where the function           closures
+                      was defined)	liners, closures
+ 
+*/
