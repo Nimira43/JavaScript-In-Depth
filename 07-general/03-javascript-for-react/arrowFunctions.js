@@ -35,3 +35,43 @@ console.log(double)
 // Arrow Function
 const double2 = numbers.map((number) => number * 2)
 console.log(double2)
+
+
+// Calling Functions - After
+
+function regular() {
+  console.log('Regular')
+}
+
+const arrow = () => console.log('Arrow')
+
+regular()
+// arrow()
+
+// Calling Functions - Before
+
+regular2()
+arrow2()
+
+function regular2() {
+  console.log('Regular')
+}
+
+const arrow2 = () => console.log('Arrow')
+
+/**
+ * Error with arrow2:
+  
+ arrowFunctions.js:54 
+ Uncaught ReferenceError: Cannot access 'arrow2' before initialization
+ 
+ */
+
+// This keyword
+
+const person = {
+  name: 'Bob',
+  sayHelloRegular: function () {
+    console.log('Regular: ', this.name)
+  }
+}
