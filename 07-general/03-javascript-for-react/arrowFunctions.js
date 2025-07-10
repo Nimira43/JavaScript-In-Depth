@@ -93,6 +93,6 @@ Regular Function	    Bound dynamically to the            Methods in objects,
 
 Arrow Function	      Lexically bound to the outer        Callbacks, one-liners, 
                       scope (where the function           closures
-                      was defined)	liners, closures
+                      was defined)
  
 */
