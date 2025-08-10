@@ -6,7 +6,7 @@ console.log(greeting)
 const formatDate = (timestamp) => {
   const date = new Date(timestamp)
 
-  return date.toLocaleDateString() + ' at ' + date.toLocaleTimeString()
+  return `${date.toLocaleDateString()} at ${date.toLocaleTimeString()}`
 }
 
 const note = {
