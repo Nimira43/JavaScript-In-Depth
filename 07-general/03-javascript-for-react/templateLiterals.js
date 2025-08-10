@@ -9,3 +9,9 @@ const formatDate = (timestamp) => {
   return date.toLocaleDateString() + ' at ' + date.toLocaleTimeString()
 }
 
+const note = {
+  title: 'Project discussion',
+  timestamp: Date.now(),
+}
+
+console.log(`Last edited: ${formatDate(note.timestamp)}`)
